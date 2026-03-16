@@ -2,7 +2,8 @@ name: TP4-DOCKER DOCKCOM
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   test-and-build:
