@@ -1,4 +1,4 @@
-name: TP4 DOCKCOM
+name: TP4-DOCKER DOCKCOM 
 
 on:
   push:
