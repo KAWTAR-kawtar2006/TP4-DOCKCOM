@@ -25,7 +25,7 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m pytest tests/ -v --cov=app
+        python -m pytest -v --cov=app
       working-directory: ./backend  # Important pour que python trouve le module 'app'
     - name: Login to DockerHub
       uses: docker/login-action@v2
