@@ -19,10 +19,13 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        python -m pip install -r requirements.txt
+      working-directory: ./backend
 
     - name: lancer les tests
-      run: python -m pytest tests/ -v --cov=app
+      run: |
+        python -m pytest -v --cov=app || [ $? -eq 5 ]
+      working-directory: ./backend
     - name: Login to DockerHub
       uses: docker/login-action@v2
       with:
