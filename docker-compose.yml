@@ -1,7 +1,7 @@
 services:
   backend:
     build: ./backend
-    image: username/flask-api:latest
+    image: kawtar2006/flask-api:latest
     ports:
       - "5000:5000"
     environment:
@@ -14,7 +14,7 @@ services:
 
   frontend:
     build: ./frontend
-    image: username/frontend-app:latest
+    image: kawtar2006/frontend-app:latest
     ports:
       - "3000:80"
     depends_on:
