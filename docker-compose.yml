@@ -1,7 +1,7 @@
 services:
   backend:
     build: ./backend
-    image: kawtar2006/flask-api:latest
+    image: kawtar2006/backend-app:latest
     ports:
       - "5000:5000"
     environment:
